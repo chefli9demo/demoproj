@@ -9,5 +9,10 @@
     "smoke",
     "security",
     "quality"
-  ]
+  ],
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true
+    }
+  }
 }
