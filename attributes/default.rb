@@ -5,4 +5,4 @@ default['test_proj']['user'] = 'web_admin'
 default['test_proj']['group'] = 'web_admin'
 
 default['test_proj']['document_root'] = '/var/www/customers/public_html'
-default['test_proj']['content_files'] = %w(customer.php index.php)
+default['test_proj']['content_files'] = %w(customer.php index.php styles.css vis.js world-110m.json)
