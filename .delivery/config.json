@@ -5,11 +5,7 @@
     "name": "delivery-truck",
     "branch": "master"
   },
-  "skip_phases": [
-    "smoke",
-    "security",
-    "quality"
-  ],
+  "skip_phases": [],
   "delivery-truck": {
     "publish": {
       "chef_server": true
