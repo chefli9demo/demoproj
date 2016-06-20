@@ -1,4 +1,3 @@
 # test_proj
 
-TODO: Enter the cookbook description here.
-
+This cookbook configures a basic web application that displays customer data.

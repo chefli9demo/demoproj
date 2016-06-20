@@ -6,7 +6,7 @@
 
 require 'spec_helper'
 
-describe 'test_proj::default' do
+describe 'test_proj::firewall' do
   context 'When all attributes are default, on Ubuntu 14.04' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new(platform: 'ubuntu', version: '14.04')
