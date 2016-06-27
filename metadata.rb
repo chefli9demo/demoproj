@@ -4,7 +4,7 @@ maintainer_email 'alexey@kaytaz.ru'
 license 'all_rights'
 description 'Installs/Configures test_proj'
 long_description 'Installs/Configures test_proj'
-version '2.8.12'
+version '2.8.13'
 
 depends 'chef-sugar'
 depends 'firewall', '~> 2.4.0'
