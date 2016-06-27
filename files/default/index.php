@@ -1,4 +1,5 @@
 <?php
+WRONG CODE
 require_once('customer.php');
 
 // Generate a JSON-formatted string that holds the name and location of each customer.
