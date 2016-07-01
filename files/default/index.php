@@ -16,6 +16,7 @@
 </head>
 <body>
 <?php
+WRONG
   require_once('customer.php');
   echo "<table>\n";
   foreach (get_sample_customers() as $customer) {
