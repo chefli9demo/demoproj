@@ -1,4 +1,4 @@
-name 'test_proj'
+name 'lamp'
 maintainer 'Alexey Kaytaz'
 maintainer_email 'alexey@kaytaz.ru'
 license 'all_rights'
