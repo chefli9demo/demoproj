@@ -1,0 +1,47 @@
+{
+  "name": "lamp",
+  "description": "Installs/Configures lamp",
+  "long_description": "Installs/Configures lamp",
+  "maintainer": "Alexey Kaytaz",
+  "maintainer_email": "alexey@kaytaz.ru",
+  "license": "all_rights",
+  "platforms": {
+  },
+  "dependencies": {
+    "chef-sugar": ">= 0.0.0",
+    "firewall": "~> 2.4.0",
+    "httpd": "~> 0.3.4",
+    "mysql": "~> 7.1.1",
+    "mysql2_chef_gem": "~> 1.1.0",
+    "database": "~> 5.1.2"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "2.8.24",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}
