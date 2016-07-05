@@ -4,6 +4,8 @@ maintainer_email 'alexey@kaytaz.ru'
 license 'all_rights'
 description 'Installs/Configures lamp'
 long_description 'Installs/Configures lamp'
+issues_url 'aaa'
+source_url 'bbb'
 version '3.0.1'
 
 depends 'firewall', '~> 2.4.0'
