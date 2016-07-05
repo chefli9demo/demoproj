@@ -4,7 +4,7 @@ maintainer_email 'alexey@kaytaz.ru'
 license 'all_rights'
 description 'Installs/Configures lamp'
 long_description 'Installs/Configures lamp'
-version '2.8.21'
+version '3.0.0'
 
 depends 'firewall', '~> 2.4.0'
 depends 'chef-sugar', '>= 0.0.0'
