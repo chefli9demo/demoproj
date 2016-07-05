@@ -17,9 +17,9 @@ end
 # Create the database instance.
 mysql_database node['lamp']['database']['dbname'] do
   connection(
-    'host' => node['lamp']['database']['host'],
-    'username' => node['lamp']['database']['root_username'],
-    'password' => node['lamp']['database']['root_password']
+    host:  node['lamp']['database']['host'],
+    username:  node['lamp']['database']['root_username'],
+    password:  node['lamp']['database']['root_password']
   )
   action :create
 end
@@ -27,9 +27,9 @@ end
 # Add a database user.
 mysql_database_user node['lamp']['database']['admin_username'] do
   connection(
-    'host' => node['lamp']['database']['host'],
-    'username' => node['lamp']['database']['root_username'],
-    'password' => node['lamp']['database']['root_password']
+    host:  node['lamp']['database']['host'],
+    username:  node['lamp']['database']['root_username'],
+    password:  node['lamp']['database']['root_password']
   )
   password node['lamp']['database']['admin_password']
   database_name node['lamp']['database']['dbname']
