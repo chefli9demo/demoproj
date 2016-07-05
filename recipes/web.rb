@@ -31,7 +31,6 @@ node['lamp']['content_files'].each do |file|
   end
 end
 
-
 # Write the home page.
 template "#{node['lamp']['document_root']}/dbvars.php" do
   source 'dbvars.php.erb'

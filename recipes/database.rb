@@ -14,8 +14,6 @@ mysql2_chef_gem 'default' do
   action :install
 end
 
-
-
 # Create the database instance.
 mysql_database node['lamp']['database']['dbname'] do
   connection(
@@ -25,7 +23,6 @@ mysql_database node['lamp']['database']['dbname'] do
   )
   action :create
 end
-
 
 # Add a database user.
 mysql_database_user node['lamp']['database']['admin_username'] do
@@ -56,8 +53,3 @@ execute "initialize #{node['lamp']['database']['dbname']} database" do
   command "mysql -h #{node['lamp']['database']['host']} -u #{node['lamp']['database']['admin_username']} -p#{node['lamp']['database']['admin_password']} -D #{node['lamp']['database']['dbname']} < #{create_tables_script_path}"
   not_if  "mysql -h #{node['lamp']['database']['host']} -u #{node['lamp']['database']['admin_username']} -p#{node['lamp']['database']['admin_password']} -D #{node['lamp']['database']['dbname']} -e 'describe customers;'"
 end
-
-
-
-
-
