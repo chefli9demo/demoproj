@@ -1,10 +1,11 @@
 #
-# Cookbook Name:: test_proj
+# Cookbook Name:: lamp
 # Recipe:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-include_recipe 'test_proj::package_cache'
-include_recipe 'test_proj::firewall'
-include_recipe 'test_proj::user'
-include_recipe 'test_proj::web'
+include_recipe 'lamp::package_cache'
+include_recipe 'lamp::firewall'
+include_recipe 'lamp::user'
+include_recipe 'lamp::web'
+include_recipe 'lamp::database'

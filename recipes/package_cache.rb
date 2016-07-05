@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: test_proj
+# Cookbook Name:: lamp
 # Recipe:: package_cache
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
