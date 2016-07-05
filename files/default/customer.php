@@ -4,18 +4,16 @@ class Customer {
   public $first_name;
   public $last_name;
   public $email;
-  public $latitude;
-  public $longitude;
-  public function __construct($id, $first_name, $last_name, $email, $latitude, $longitude) {
+  public function __construct($id, $first_name, $last_name, $email) {
     $this->id = $id;
     $this->first_name = $first_name;
     $this->last_name = $last_name;
     $this->email = $email;
-    $this->latitude = $latitude;
-    $this->longitude = $longitude;
   }
 }
+
 function get_sample_customers() {
+
   include "dbvars.php";
 
   $array = array();
@@ -35,7 +33,7 @@ function get_sample_customers() {
 
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-      $array[$i]=new Customer("$row[id]", "$row[first_name]", "$row[last_name]", "$row[email]","$row[latitude]","$row[longitude]");
+      $array[$i]=new Customer("$row[id]", "$row[first_name]", "$row[last_name]", "$row[email]");
      $i=$i+1;
     }
 } else {
@@ -45,5 +43,7 @@ function get_sample_customers() {
 // Close connection
 $conn->close();
 return $array;
+
+
 }
 ?>
